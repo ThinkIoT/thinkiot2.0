@@ -21,7 +21,7 @@ export default function Teams() {
             <div
               id="padding"
               data-aos-duration="1000"
-              className="title-font mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
+              className="title-font mt-36 mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
             >
               <p>
                 Enthusiastic members driving the evolution of ethical hacking.
