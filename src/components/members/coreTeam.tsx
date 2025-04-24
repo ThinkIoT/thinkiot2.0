@@ -1,83 +1,52 @@
 export default [
+  {
+    imageUrl: "",
+    name: "Subhadeep Mukherjee",
+    designation: "Lead-Operations Head",
+    instagram: "https://www.instagram.com/_the_._fearless_._loner_/",
+    linkedin: "www.linkedin.com/in/subhadeep-mukherjee-b876a5221",
+    twitter: "",
+    github: "https://github.com/RohaannM"
+  },
 
-    {
-      imageUrl: "",
-      name: "Souvik Chowdhury",
-      designation: "Vice-President",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
+  {
+    imageUrl: "",
+    name: "Sumantra Bandyopadhyay",
+    designation: "Lead-Network & Security Analyst",
+    instagram: "",
+    linkedin: "https://www.linkedin.com/in/sumantra04/",
+    twitter: "",
+    github: ""
+  },
 
-    {
-      imageUrl: "",
-      name: "Sumantra Bandyopadhyay",
-      designation: "Education Lead & Website Manager",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
-    
-    {
-      imageUrl: "",
-      name: "Aman Kumar",
-      designation: "Treasurer",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
-    {
-      imageUrl: "./img/corememb/Debrik.jpg",
-      name: "Debrik Chakroborty",
-      designation: "Joint-Treasurer",
-      instagram: "https://www.instagram.com/idebrikchakraborty/",
-      linkedin: "https://www.linkedin.com/in/debrik-chakraborty-aa5293231/",
-      twitter: "https://x.com/Debrik1",
-      github: "https://github.com/Thebrik"
-    },
-  
-    {
-      imageUrl: "",
-      name: "Ankita Bandyopadhyay",
-      designation: "Secretary",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
+{
+    imageUrl: "",
+    name: "Sayantani Chatterjee",
+    designation: "Lead-Software Developer",
+    instagram: "https://www.instagram.com/___sintane___1203___/",
+    linkedin: "linkedin.com/in/sayantani-chatterjee-787788257",
+    twitter: "",
+    github: ""
+  },
 
-    {
-      imageUrl: "./img/corememb/Ananya.jpg",
-      name: "Ananya Banerjee ",
-      designation: "Coordinator",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
+  {
+    imageUrl: "",
+    name: "Debangshu Hazari",
+    designation: "Lead-IoT Developer",
+    instagram: "https://www.instagram.com/debangshuhazari/",
+    linkedin: "https://www.linkedin.com/in/debangshu-hazari-88a26b229/",
+    twitter: "",
+    github: ""
+  },
 
-    {
-      imageUrl: "./img/corememb/Abinash.jpg",
-      name: "Abinash Kumar",
-      designation: "Chief Event Coordinator",
-      instagram: "https://www.instagram.com/abinashjha91?igsh=MWI1aDlwZ2U3aGpxdQ==",
-      linkedin: "https://www.linkedin.com/feed/",
-      twitter: "https://x.com/?lang=en",
-      github: "https://github.com/Abinash456"
-    },
-
-    {
-      imageUrl: "./img/corememb/Disha.jpg",
-      name: "Disha Bhattacharya",
-      designation: "Coordinator",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
-    },
-
+{
+    imageUrl: "",
+    name: "Tuhin Modak",
+    designation: "Lead-Web Developer",
+    instagram: "https://www.instagram.com/modaktuhin31/",
+    linkedin: "https://www.linkedin.com/in/tuhin-modak-a776212a8/",
+    twitter: "",
+    github: ""
+  }
   ];
   
