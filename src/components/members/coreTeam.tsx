@@ -12,7 +12,7 @@ export default [
   {
     imageUrl: "",
     name: "Sumantra Bandyopadhyay",
-    designation: "Lead-Network & Security Analyst",
+    designation: "Tech Lead",
     instagram: "",
     linkedin: "https://www.linkedin.com/in/sumantra04/",
     twitter: "",
