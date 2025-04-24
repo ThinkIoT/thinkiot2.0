@@ -30,7 +30,7 @@ export default function Event() {
                 <div className="p-10 xl:p-16">
                   <div className="mb-8">
                     <h1 className="mb-4 w-full text-2xl text-gray-100 font-semibold">
-                    ENCRYPTA <span className="text-red-500">2.0</span>
+                    ENIGMA <span className="text-red-500">2.0</span>
                     </h1>
                     <p className="text-gray-100">
                     Join us for Encrypta 2.0, a thrilling cyber security event hosted by the Cyber Security Club. Test your skills and compete with the best!
@@ -58,7 +58,7 @@ export default function Event() {
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" className="mt-10 text-center">
               <p className="title-font mb-4 text-center text-2xl font-medium text-gray-100 sm:text-3xl">
-                Recent Events
+                Previous Events
               </p>
             </div>
             <section className="mt-6 grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-4 ">
