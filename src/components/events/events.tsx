@@ -8,11 +8,13 @@ import EventCard from "./eventCard";
 export default function Event() {
   React.useEffect(() => {
     AOS.init();
-    AOS.refresh();
+    
+    window.scrollTo({ top: 0, behavior: "auto" });
   }, []);
+
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="min-h-screen bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-[#0a192f] bg-blend-overlay text-white">
         <section className="mx-auto mb-50 max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-4">
           <article className="col-auto mb-10">
@@ -20,20 +22,20 @@ export default function Event() {
               <h1 className="title-font mb-20 mt-36 text-center text-2xl font-medium text-gray-100 sm:text-3xl">  
                 Upcoming Event & Workshops
               </h1>
-              {/* Banner */}
+
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
                 <img
-                  className="w-auto rounded-t-lg xl:h-96 xl:rounded-l-lg xl:rounded-t-none"
+                  className="w-auto rounded-t-lg sm:h-72 xl:h-96 xl:rounded-l-lg xl:rounded-t-none"
                   src="/img/comingsoon.png"
-                  alt="banner"
+                  alt="Encrypta 2.0 event banner"
                 />
                 <div className="p-10 xl:p-16">
                   <div className="mb-8">
                     <h1 className="mb-4 w-full text-2xl text-gray-100 font-semibold">
-                    ENIGMA <span className="text-red-500">2.0</span>
+                      ENIGMA <span className="text-red-500">2.0</span>
                     </h1>
                     <p className="text-gray-100">
-                    Join us for Encrypta 2.0, a thrilling cyber security event hosted by the Cyber Security Club. Test your skills and compete with the best!
+                      Join us for Encrypta 2.0, a thrilling cyber security event hosted by the Cyber Security Club. Test your skills and compete with the best!
                     </p>
                     <p className="text-gray-400 mt-4">
                       <strong>Date:</strong> XX/XX/2025
@@ -61,7 +63,7 @@ export default function Event() {
                 Previous Events
               </p>
             </div>
-            <section className="mt-6 grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-4 ">
+            <section className="mt-6 grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
               {eventCardData.map(events => (
                 <EventCard events={events} key={events.title} />
               ))}
