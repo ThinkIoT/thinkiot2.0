@@ -3,8 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 
-import { Button } from "./button";
-
 gsap.registerPlugin(ScrollTrigger);
 
 export const Hero = () => {
@@ -62,13 +60,6 @@ export const Hero = () => {
               Want to get into the world of <br />
               Internet of Things
             </p>
-
-            {/* <Button
-              id="watch-trailer"
-              containerClass="bg-red-500 flex-center gap-1"
-            >
-              Register Here
-            </Button> */}
           </div>
         </div>
       </div>
