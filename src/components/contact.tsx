@@ -25,7 +25,7 @@ export const Contact = () => {
 
       <div className="w-full flex justify-between items-center mt-8">
         <div className="w-1/2 flex flex-col items-start -mt-5">
-          <p className="text-lg pb-5 text-violet-50 max-w-md">
+          <p className="text-lg pb-5 text-violet-50 max-w-md text-justify" style={{ lineHeight: '2.2' }}>
             We are a group of passionate and creative students who came together to design and develop this website for our college. Each of us brought unique skills—from coding and design to content writing and project management—to make this project a success. This website is a reflection of our teamwork, dedication, and love for our college community.
           </p>
           <Link to="/members"><Button containerClass="bg-red-500 flex-center gap-1">Members</Button></Link>

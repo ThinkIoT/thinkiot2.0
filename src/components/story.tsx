@@ -25,7 +25,7 @@ export const Story = () => {
 
       <div className="w-full flex justify-between items-center mt-8">
         <div className="w-1/2 flex flex-col items-start -mt-5">
-          <p className="text-lg pb-5 text-violet-50 max-w-md">
+          <p className="text-lg pb-5 text-violet-50 max-w-md text-justify" style={{ lineHeight: '2.2' }}>
             Our recent college IoT event gave students hands-on experience with devices like Arduino and Esp32. Guided by seniors and supported by faculty, students explored real-world applications and gained valuable practical knowledge in IoT.
           </p>
           <Link to="/events"><Button containerClass="bg-red-500 flex-center gap-1">Events</Button></Link>
