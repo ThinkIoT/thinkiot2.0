@@ -18,7 +18,7 @@ export default function EventCard({ events }: { events: Event }) {
     <div data-aos="fade-up" data-aos-duration="1000">
       {/* Mobile View */}
       <div className="group relative mb-auto mt-auto flex h-auto w-auto transform overflow-hidden rounded-lg bg-white shadow-xl transition duration-500 ease-in-out hover:scale-105 sm:hidden">
-        <div className="relative ">
+        <div className="relative overflow-hidden">
           <img
             src={events.imageUrl}
             alt={events.imageAlt}
