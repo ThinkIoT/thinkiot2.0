@@ -1,13 +1,13 @@
 export default [
     // ENCRYPTA
     {
-      imageUrl: "/img/encrypta.jpg",
-      imageAlt: "Encrypta",
-      title: "Encrypta",
-      date: "03", suscript: "th", year: "October 2023",
+      imageUrl: "/public/img/Workshop1.jpg",
+      imageAlt: "Seminar and Hands-on workshop on IOT",
+      title: "Workshop1",
+      date: "12", suscript: "th", year: "April 2024",
       platform: "Albert Einstein Hall, 3rd Floor",
-      time: "11:00am - Onwards",
+      time: "10:30am - Onwards",
       button: "Check It out",
-      href: "/encrypta",
+      href: "",
     },
   ];

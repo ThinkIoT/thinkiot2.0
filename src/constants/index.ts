@@ -3,7 +3,6 @@ import { FaDiscord, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
 export const NAV_ITEMS = [
   { label: "HOME", href: "\\#hero" },
   { label: "About", href: "\\#about" },
-  //{ label: "Nexus", href: "#nexus" },
   { label: "Events", href: "\\#story" },
   { label: "Team", href: "\\#contact" },
 ] as const;
