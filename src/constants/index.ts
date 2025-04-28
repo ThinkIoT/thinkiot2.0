@@ -1,4 +1,4 @@
-import { FaDiscord, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 export const NAV_ITEMS = [
   { label: "HOME", href: "\\#hero" },
@@ -9,19 +9,15 @@ export const NAV_ITEMS = [
 
 export const SOCIAL_LINKS = [
   {
-    href: "https://discord.com",
-    icon: FaDiscord,
+    href: "https://www.linkedin.com/company/think-iot/",
+    icon: FaLinkedin,
   },
   {
-    href: "https://twitter.com",
-    icon: FaTwitter,
+    href: "https://www.facebook.com/thinkIoT?mibextid=kFxxJD",
+    icon: FaFacebook,
   },
   {
-    href: "https://youtube.com",
-    icon: FaYoutube,
-  },
-  {
-    href: "https://twitch.com",
-    icon: FaTwitch,
+    href: "https://github.com/ThinkIoT",
+    icon: FaGithub,
   },
 ] as const;
