@@ -1,6 +1,6 @@
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import "react-lazy-load-image-component/src/effects/blur.css";
+
+
 interface Core {
   imageUrl: string,
   name: string,
@@ -26,8 +26,6 @@ export default function Core({ core }:{ core: Core }) {
             <img
               src={core.imageUrl}
               alt={core.name}
-              // placeholderSrc="img/Teams/exe.png"
-              // effect="blur"
               className=" rounded-full  object-cover "
             />
           </div>

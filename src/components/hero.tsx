@@ -63,12 +63,12 @@ export const Hero = () => {
               Internet of Things
             </p>
 
-            <Button
+            {/* <Button
               id="watch-trailer"
               containerClass="bg-red-500 flex-center gap-1"
             >
               Register Here
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

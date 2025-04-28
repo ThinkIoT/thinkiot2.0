@@ -26,25 +26,25 @@ export default function Event() {
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
                 <img
                   className="w-auto rounded-t-lg sm:h-72 xl:h-96 xl:rounded-l-lg xl:rounded-t-none"
-                  src="/img/comingsoon.png"
+                  src="/img/Enigma.jpg"
                   alt="Encrypta 2.0 event banner"
                 />
                 <div className="p-10 xl:p-16">
                   <div className="mb-8">
                     <h1 className="mb-4 w-full text-2xl text-gray-100 font-semibold">
-                      ENIGMA <span className="text-red-500">2.0</span>
+                      <span className="text-red-500">ENIGMA</span>
                     </h1>
                     <p className="text-gray-100">
-                      Join us for Encrypta 2.0, a thrilling cyber security event hosted by the Cyber Security Club. Test your skills and compete with the best!
+                    Unlock the secrets of the connected world at Enigma — an exciting IoT workshop hosted by the Think-IOT Research Lab! Dive into smart technologies, build innovative solutions, and shape the future of connectivity.
                     </p>
                     <p className="text-gray-400 mt-4">
-                      <strong>Date:</strong> XX/XX/2025
+                      <strong>Date:</strong> 16/05/2025
                     </p>
                     <p className="text-gray-400">
-                      <strong>Time:</strong> Will be notified soon
+                      <strong>Time:</strong> 10:30 AM Onwards
                     </p>
                     <p className="text-gray-400">
-                      <strong>Location:</strong> Will be notified soon
+                      <strong>Location:</strong> Albert Einstein Hall
                     </p>
                   </div>
                   <div>

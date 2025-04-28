@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import CoreCard from "./coreCard";
 import CoreTeam from "./coreTeam";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Navbar } from "../navbar";
 
 export default function Teams() {
+  const [filter, setFilter] = useState("All");
+
+  const filterBySecondYear = () => setFilter("2nd Year");
+  const filterByThirdYear = () => setFilter("3rd Year");
+  const filterByFourthYear = () => setFilter("4th Year");
+  const filterByAlumni = () => setFilter("Alumni");
+  const filterByFacultyAdvisor = () => setFilter("Faculty Advisor");
+  const resetFilter = () => setFilter("All");
+
+  const filteredTeam = filter === "All" ? CoreTeam : CoreTeam.filter(core => core.category === filter);
+
   React.useEffect(() => {
     AOS.init();
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -21,21 +31,59 @@ export default function Teams() {
             <div
               id="padding"
               data-aos-duration="1000"
-              className="title-font mt-36 mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
+              className="title-font mt-20 mb-10 text-center text-2xl font-medium text-white sm:text-3xl"
             >
-              <p>
-                Enthusiastic members driving the evolution of ethical hacking.
-              </p>
+              <p>Enthusiastic members of THINK-IOT.</p>
             </div>
-            <h1
+            {/* <h1
               data-aos="fade-up"
               data-aos-duration="1000"
               className="title-font mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
             >
               Core Team
-            </h1>
+            </h1> */}
+
+            <div className="flex justify-center gap-5 mb-36">
+              <button
+                onClick={resetFilter}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                ALL
+              </button>
+              <button
+                onClick={filterByFacultyAdvisor}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                Faculty Advisor
+              </button>
+              <button
+                onClick={filterByFourthYear}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                4th Year
+              </button>
+              <button
+                onClick={filterByThirdYear}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                3rd Year
+              </button>
+              <button
+                onClick={filterBySecondYear}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                2nd Year
+              </button>
+              <button
+                onClick={filterByAlumni}
+                className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+              >
+                Alumini
+              </button>
+            </div>
+
             <section className="flex flex-wrap justify-center gap-5">
-              {CoreTeam.map(core => (
+              {filteredTeam.map(core => (
                 <CoreCard core={core} key={core.name} />
               ))}
             </section>
