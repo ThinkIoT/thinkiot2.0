@@ -32,33 +32,33 @@ export default function Core({ core }:{ core: Core }) {
         </div>
         <div className=" p-2 ">
           <h1 className="mb-1 text-center text-2xl font-bold">{core.name}</h1>
-          <p className="text-center text-sm text-gray-800">
+          <p className="text-center text-sm text-white-800">
             {core.designation}
           </p>
         </div>
         <div className="flex justify-center gap-5 pt-5 text-xl text-gray-700   ">
           <a
             href={core.instagram}
-            className="hover:text-red-600"
+            className="text-slate-300 hover:text-red-600"
             target="_blank"
           >
             <BsInstagram />
           </a>
           <a
             href={core.linkedin}
-            className="hover:text-red-600"
+            className="text-slate-300 hover:text-red-600"
             target="_blank"
           >
             <BsLinkedin />
           </a>
           <a
             href={core.twitter}
-            className="hover:text-red-600"
+            className="text-slate-300 hover:text-red-600"
             target="_blank"
           >
             <BsTwitter />
           </a>
-          <a href={core.github} className="hover:text-red-600" target="_blank">
+          <a href={core.github} className="text-slate-300 hover:text-red-600" target="_blank">
             {" "}
             <BsGithub />
           </a>

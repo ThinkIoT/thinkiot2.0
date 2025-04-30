@@ -49,7 +49,7 @@ export default function Event() {
                   </div>
                   <div>
                     <a
-                      href="/eventdetails"
+                      href="https://forms.gle/6BAGAYZdGcKhNH8F9"
                       className="focus:outline-none mt-10 rounded-full bg-red-600 p-2 px-4 text-center font-semibold shadow-lg transition-all duration-300 hover:bg-red-700 hover:shadow-none focus:ring"
                     >
                       Register Here

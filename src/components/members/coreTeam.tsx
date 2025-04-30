@@ -12,7 +12,7 @@ export default [
   },
 
   {
-    imageUrl: "",
+    imageUrl: "/img/sumantra1.jpg",
     name: "Sumantra Bandyopadhyay",
     designation: "Tech Lead",
     instagram: "",
@@ -53,6 +53,97 @@ export default [
     github: "",
     category: "4th Year"
   },
+  {
+    imageUrl: "/img/Survi.jpg",
+    name: "SurviMukherjee",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/w.i.n.t.e.r._l.o.v.e.?igsh=MWZsMGF0ZnRoYW53dQ==",
+    linkedin: "https://www.linkedin.com/in/survi-mukherjee-8302272a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/MukherjeeSurvi",
+    github: "https://github.com/survi09mukherjee",
+    category: "3rd Year" 
+  },
+
+{
+    imageUrl: "/img/Rajeshwari.jpg",
+    name: "RajeshwariDas",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/rai.chan.96?igsh=eXhnMngyZDR2N3Vy",
+    linkedin: "https://www.linkedin.com/in/rajeshwari-das?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/D_rajeshwari404",
+    github: "https://github.com/Dasrajeshwari78",
+    category: "3rd Year" 
+  },
+
+{
+    imageUrl: "/img/Titiksha.jpg",
+    name: "Titiksha Dalal",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/._blue.sky.?igsh=aXpkd20zMTR6cnZj",
+    linkedin: "https://www.linkedin.com/in/titiksha-dalal-0a9a13280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi⁰⁰d_⁰app",
+    twitter: "https://x.com/DalalTitik83849",
+    github: "https://github.com/TD06",
+    category: "3rd Year" 
+  },
+
+{
+    imageUrl: "/img/Sneha.jpg",
+    name: "Sneha Chand",
+    designation: "Coordinator",
+    instagram: "",
+    linkedin: "https://www.linkedin.com/in/sneha-chand-902aa4286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: "",
+    category: "3rd Year" 
+  },
+
+{
+    imageUrl: "/img/Rima.jpg",
+    name: "Rima Gorai",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/rimagorai01?igsh=dmR6c2hqb2dhc2kx",
+    linkedin: "https://www.linkedin.com/in/rima-gorai-a97436263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/RimaGorai01?t=3VK8vme4kCeBcOFLyS1YGA&s=09",
+    github: "https://github.com/Rima0000",
+    category: "3rd Year" 
+  },
+
+{
+    imageUrl: "/img/Gokul.jpg",
+    name: "Gokul Pal",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/gokul_pal007/profilecard/?igsh=MTk0NTY5ZzVub2k3MQ== ",
+
+    linkedin: "https://www.linkedin.com/in/gokul-pal-5ab005320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+
+    twitter: "https://x.com/GokulPal0716",
+
+    github: "https://github.com/gokul8116",
+
+    category: "3rd Year" 
+
+  },
+
+{
+    imageUrl: "/img/Upasana.jpg",
+    name: "Upasana Ghosh",
+    designation: "Coordinator",
+    instagram: "https://www.instagram.com/upasana_41?igsh=c2F3N3lsYmptOTZh",
+    linkedin: "https://www.linkedin.com/in/upasana-ghosh-7b662228a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: "https://github.com/UPASANA9151h",
+    category: "3rd Year" 
+  },
+  {
+    imageUrl: "/img/ayan.jpg",
+    name: "Ayan Mazumdar",
+    designation: "Co-ordinator",
+    instagram: "https://www.instagram.com/ayan_mazumdar?igsh=MTd5Ymw1am9jMjM1",
+    linkedin: "https://www.linkedin.com/in/ayan-mazumdar-cs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: "",
+    category: "2nd Year"
+   },
 
   // {
   //   imageUrl: "",
