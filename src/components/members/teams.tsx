@@ -35,14 +35,6 @@ export default function Teams() {
             >
               <p>Enthusiastic members of THINK-IOT.</p>
             </div>
-            {/* <h1
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="title-font mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
-            >
-              Core Team
-            </h1> */}
-
             <div className="flex justify-center gap-5 mb-36">
               <button
                 onClick={resetFilter}
@@ -78,7 +70,7 @@ export default function Teams() {
                 onClick={filterByAlumni}
                 className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600"
               >
-                Alumini
+                Alumni
               </button>
             </div>
 
