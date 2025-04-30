@@ -3,8 +3,6 @@ import CoreCard from "./coreCard";
 import CoreTeam from "./coreTeam";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Navbar } from "../navbar";
-
 export default function Teams() {
   const [filter, setFilter] = useState("All");
 
@@ -24,7 +22,6 @@ export default function Teams() {
 
   return (
     <div>
-      <Navbar />
       <div className="min-h-screen bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-[#0a192f] bg-blend-overlay text-white">
         <section className="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6">
           <article className="col-auto mb-10 mt-10">
