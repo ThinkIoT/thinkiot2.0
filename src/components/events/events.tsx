@@ -1,10 +1,8 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Navbar } from "../navbar";
 import eventCardData from "./eventCardData";
 import EventCard from "./eventCard";
-
 export default function Event() {
   React.useEffect(() => {
     AOS.init();
@@ -14,7 +12,6 @@ export default function Event() {
 
   return (
     <div>
-      <Navbar />
       <div className="min-h-screen bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-[#0a192f] bg-blend-overlay text-white">
         <section className="mx-auto mb-50 max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-4">
           <article className="col-auto mb-10">
