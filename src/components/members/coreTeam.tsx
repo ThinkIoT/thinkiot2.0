@@ -1,5 +1,6 @@
 export default [
 
+  //4th Year
   {
     imageUrl: "/img/Subhadeep.jpg",
     name: "Subhadeep Mukherjee",
@@ -53,6 +54,8 @@ export default [
     github: "",
     category: "4th Year"
   },
+
+  //3rd Year
   {
     imageUrl: "/img/Survi.jpg",
     name: "SurviMukherjee",
@@ -134,6 +137,8 @@ export default [
     github: "https://github.com/UPASANA9151h",
     category: "3rd Year" 
   },
+
+  //2nd Year
   {
     imageUrl: "/img/ayan.jpg",
     name: "Ayan Mazumdar",
