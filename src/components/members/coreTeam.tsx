@@ -162,23 +162,23 @@ export default [
    {
     imageUrl:"/img/vicky.jpg",
     name: "Vicky Raj",
-    designation: "Co-ordinator", 
-    instagram:"https://www.instagram.com/vicky_raj_012", 
-    linkedin:"https://www.linkedin.com/in/vicky-raj-2004abc",
-    twitter:"https://x.com/vickyraj12004",
-    github:"https://github.com/catalyst2004",
+    designation: "Co-ordinator",
+    instagram: "https://www.instagram.com/vicky_raj_012",
+    linkedin: "https://www.linkedin.com/in/vicky-raj-2004abc",
+    twitter: "https://x.com/vickyraj12004",
+    github: "https://github.com/catalyst2004",
     category: "2nd Year"
    },
 
     // Alumni
     {
       imageUrl:"/img/amartya.jpg",
-      name: "Vicky Raj",
-      designation: "Batch 2017", 
-      instagram:"", 
-      linkedin:"",
-      twitter:"",
-      github:"",
+      name: "Amartya Chakraborty",
+      designation: "Batch 2017",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
       category: "Alumni"
      },
   // {
