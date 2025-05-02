@@ -171,16 +171,7 @@ export default [
    },
 
     // Alumni
-    {
-      imageUrl:"/img/vicky.jpg",
-      name: "Vicky Raj",
-      designation: "Co-ordinator", 
-      instagram:"https://www.instagram.com/vicky_raj_012", 
-      linkedin:"https://www.linkedin.com/in/vicky-raj-2004abc",
-      twitter:"https://x.com/vickyraj12004",
-      github:"https://github.com/catalyst2004",
-      category: "Alumni"
-     },
+    
   // {
   //   imageUrl: "",
   //   name: "Tuhin Modak",
