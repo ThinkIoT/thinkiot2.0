@@ -162,63 +162,16 @@ export default [
    {
     imageUrl:"/img/vicky.jpg",
     name: "Vicky Raj",
-<<<<<<< HEAD
     designation: "Co-ordinator", 
     instagram:"https://www.instagram.com/vicky_raj_012", 
     linkedin:"https://www.linkedin.com/in/vicky-raj-2004abc",
     twitter:"https://x.com/vickyraj12004",
     github:"https://github.com/catalyst2004",
-=======
-    designation: "Co-ordinator",
-    instagram: "https://www.instagram.com/vicky_raj_012",
-    linkedin: "https://www.linkedin.com/in/vicky-raj-2004abc",
-    twitter: "https://x.com/vickyraj12004",
-    github: "https://github.com/catalyst2004",
->>>>>>> a16fc0bb25783b8760f59fcf5cf3849ba77110d0
     category: "2nd Year"
    },
 
     // Alumni
-    {
-      imageUrl: "/img/amartya.jpg",
-      name: "Amartya Chakrobarty",
-      designation: "Batch 2017", 
-      instagram:"", 
-      linkedin:"",
-      twitter:"",
-      github:"",
-      category: "Alumni"
-      },
-    {
-      imageUrl: "/img/bibek.jpg",
-      name: "Bibek Poddar",
-      designation: "Batch 2017", 
-      instagram:"", 
-      linkedin:"",
-      twitter:"",
-      github:"",
-      category: "Alumni"
-      },
-    {
-      imageUrl: "/img/Anubrata.jpg",
-      name: "Anubrata Sanyal",
-      designation: "Batch 2017", 
-      instagram:"", 
-      linkedin:"https://www.linkedin.com/in/anubrata-sanyal-a0470b127/",
-      twitter:"",
-      github:"https://github.com/anubratasanyal",
-      category: "Alumni"
-      },
-    {
-      imageUrl: "/img/.jpg",
-      name: "",
-      designation: "Batch 2017", 
-      instagram:"", 
-      linkedin:"",
-      twitter:"",
-      github:"",
-      category: "Alumni"
-      },
+    
 
   // {
   //   imageUrl: "",
