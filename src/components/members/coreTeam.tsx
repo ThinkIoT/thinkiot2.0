@@ -179,7 +179,7 @@ export default [
       linkedin:"https://www.linkedin.com/in/vicky-raj-2004abc",
       twitter:"https://x.com/vickyraj12004",
       github:"https://github.com/catalyst2004",
-      category: "Alumini"
+      category: "Alumni"
      },
   // {
   //   imageUrl: "",
