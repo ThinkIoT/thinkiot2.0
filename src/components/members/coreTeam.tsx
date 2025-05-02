@@ -171,7 +171,16 @@ export default [
    },
 
     // Alumni
-    
+    {
+      imageUrl:"/img/amartya.jpg",
+      name: "Vicky Raj",
+      designation: "Batch 2017", 
+      instagram:"", 
+      linkedin:"",
+      twitter:"",
+      github:"",
+      category: "Alumni"
+     },
   // {
   //   imageUrl: "",
   //   name: "Tuhin Modak",
