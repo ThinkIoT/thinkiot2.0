@@ -154,21 +154,29 @@ export default [
     name: "Diksha Mishra",
     designation: "Co-ordinator",
     instagram: "https://www.instagram.com/diksha_mishra_128?igsh=MTh1NTBtZWNoMjhnNg==",
-    linkedIn: "https://www.linkedin.com/in/diksha-mishra-24b375289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    twitter:"https://x.com/DikshaMish72223",
+    linkedin: "https://www.linkedin.com/in/diksha-mishra-24b375289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/DikshaMish72223",
     github: "https://github.com/Diksha-2005",
     category: "2nd Year"
    },
    {
-    imageUrl: "/img/vicky.jpg",
+    imageUrl:"/img/vicky.jpg",
     name: "Vicky Raj",
+<<<<<<< HEAD
     designation: "Co-ordinator", 
     instagram:"https://www.instagram.com/vicky_raj_012", 
     linkedin:"https://www.linkedin.com/in/vicky-raj-2004abc",
     twitter:"https://x.com/vickyraj12004",
     github:"https://github.com/catalyst2004",
+=======
+    designation: "Co-ordinator",
+    instagram: "https://www.instagram.com/vicky_raj_012",
+    linkedin: "https://www.linkedin.com/in/vicky-raj-2004abc",
+    twitter: "https://x.com/vickyraj12004",
+    github: "https://github.com/catalyst2004",
+>>>>>>> a16fc0bb25783b8760f59fcf5cf3849ba77110d0
     category: "2nd Year"
-    },
+   },
 
     // Alumni
     {
