@@ -181,6 +181,27 @@ export default [
       github: "",
       category: "Alumni"
      },
+     {
+      imageUrl:"/img/bibek.jpg",
+      name: "Bibek Poddar",
+      designation: "Batch 2017",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Alumni"
+
+     },
+     {
+      imageUrl:"/img/Anubrata.jpg",
+      name: "Anubrata Sanyal",
+      designation: "Batch 2017",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Alumni"
+     },
   // {
   //   imageUrl: "",
   //   name: "Tuhin Modak",
