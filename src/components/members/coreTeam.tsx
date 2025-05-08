@@ -3,7 +3,7 @@ export default [
   //4th Year
   {
     imageUrl: "/img/Subhadeep.jpg",
-    name: "Subhadeep Mukherjee",
+    name: "Subhadeep Mukhe",
     designation: "Lead-Operations Head",
     instagram: "https://www.instagram.com/_the_._fearless_._loner_/",
     linkedin: "https://www.linkedin.com/in/subhadeep-mukherjee-b876a5221",
