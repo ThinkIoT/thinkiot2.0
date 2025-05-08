@@ -54,12 +54,22 @@ export default [
     github: "",
     category: "4th Year"
   },
+  {
+    imageUrl: "/img/Anubhab.jpg",
+    name: "Anubhab Maji",
+    designation: "Lead Event Manager",
+    instagram: "https://www.instagram.com/.decode_bahbuna.?igsh=a3JqcDI1Nndrb3Nt",
+    linkedin: "https://www.linkedin.com/in/anubhabmaji/",
+    twitter: "https://x.com/anubhab_maji?t=yLWIiQOvqtNDnvLwY_xUOw&s=08 ",
+    github: "https://github.com/Anubhab081201",
+    category: "4th Year"
+  },
 
   //3rd Year
   {
     imageUrl: "/img/Survi.jpg",
-    name: "SurviMukherjee",
-    designation: "member",
+    name: "Survi Mukherjee",
+    designation: "Member",
     instagram: "https://www.instagram.com/w.i.n.t.e.r._l.o.v.e.?igsh=MWZsMGF0ZnRoYW53dQ==",
     linkedin: "https://www.linkedin.com/in/survi-mukherjee-8302272a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "https://x.com/MukherjeeSurvi",
@@ -69,8 +79,8 @@ export default [
 
 {
     imageUrl: "/img/Rajeshwari.jpg",
-    name: "RajeshwariDas",
-    designation: "member",
+    name: "Rajeshwari Das",
+    designation: "Member",
     instagram: "https://www.instagram.com/rai.chan.96?igsh=eXhnMngyZDR2N3Vy",
     linkedin: "https://www.linkedin.com/in/rajeshwari-das?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "https://x.com/D_rajeshwari404",
@@ -81,7 +91,7 @@ export default [
 {
     imageUrl: "/img/Titiksha.jpg",
     name: "Titiksha Dalal",
-    designation: "member",
+    designation: "Member",
     instagram: "https://www.instagram.com/._blue.sky.?igsh=aXpkd20zMTR6cnZj",
     linkedin: "https://www.linkedin.com/in/titiksha-dalal-0a9a13280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi⁰⁰d_⁰app",
     twitter: "https://x.com/DalalTitik83849",
@@ -92,7 +102,7 @@ export default [
 {
     imageUrl: "/img/Sneha.jpg",
     name: "Sneha Chand",
-    designation: "member",
+    designation: "Member",
     instagram: "",
     linkedin: "https://www.linkedin.com/in/sneha-chand-902aa4286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "",
@@ -103,7 +113,7 @@ export default [
 {
     imageUrl: "/img/Rima.jpg",
     name: "Rima Gorai",
-    designation: "member",
+    designation: "Member",
     instagram: "https://www.instagram.com/rimagorai01?igsh=dmR6c2hqb2dhc2kx",
     linkedin: "https://www.linkedin.com/in/rima-gorai-a97436263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "https://x.com/RimaGorai01?t=3VK8vme4kCeBcOFLyS1YGA&s=09",
@@ -114,7 +124,7 @@ export default [
 {
     imageUrl: "/img/Gokul.jpg",
     name: "Gokul Pal",
-    designation: "member",
+    designation: "Member",
     instagram: "https://www.instagram.com/gokul_pal007/profilecard/?igsh=MTk0NTY5ZzVub2k3MQ== ",
 
     linkedin: "https://www.linkedin.com/in/gokul-pal-5ab005320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -130,7 +140,7 @@ export default [
 {
     imageUrl: "/img/Upasana.jpg",
     name: "Upasana Ghosh",
-    designation: "member",
+    designation: "Member",
     instagram: "https://www.instagram.com/upasana_41?igsh=c2F3N3lsYmptOTZh",
     linkedin: "https://www.linkedin.com/in/upasana-ghosh-7b662228a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "",
@@ -169,6 +179,26 @@ export default [
     github: "https://github.com/catalyst2004",
     category: "2nd Year"
    },
+   {
+    imageUrl:"/img/Aditi.jpg",
+    name: "Aditi Banerjee",
+    designation: "member",
+    instagram: "https://www.instagram.com/adiitteaa__?igsh=bXhwNWd6aGFqbm55&utm_source=qr",
+    linkedin: "",
+    twitter: "",
+    github: "",
+    category: "2nd Year"
+   },
+   {
+    imageUrl:"/img/Suvayu.jpg",
+    name: "Subhayu Panja",
+    designation: "member",
+    instagram: "https://www.instagram.com/_blackspencer_?igsh=MXZndnUwejc0c3FqeQ==",
+    linkedin: "https://www.linkedin.com/in/subhayu-panja-a16a552a9utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: "",
+    category: "2nd Year"
+   },
 
     // Alumni
     {
@@ -201,6 +231,107 @@ export default [
       twitter: "",
       github: "",
       category: "Alumni"
+     },
+
+     {
+      imageUrl:"/img/ashutosh18.jpg",
+      name: "Ashustosh Roy",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "https://linkedin.com/in/ashutosh-roy141/",
+      twitter: "",
+      github: "https://github.com/ashucode",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/dhruv.jpg",
+      name: "Dhruv Chakrobarty",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/kartick18.jpg",
+      name: "Kartick Das Banerjee",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/kartick-banerjee-0a44b6102/",
+      twitter: "",
+      github: "https://github.com/kartickb21",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/deepak.jpg",
+      name: "Deepak Kumar",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/jatin18.jpg",
+      name: "Jatin",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/jatin-kr-b1b867126",
+      twitter: "",
+      github: "https://github.com/Josephkr45",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/dhananjay.jpg",
+      name: "Dhananajay Pandey",
+      designation: "Batch 2018",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/kshitij19.jpg",
+      name: "Kshitij Kumar",
+      designation: "Batch 2019",
+      instagram: "",
+      linkedin: "https://linkedin.com/in/iKshitij",
+      twitter: "",
+      github: "https://github.com/iKshitiz",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/kirti19.jpg",
+      name: "Kirti Kumari",
+      designation: "Batch 2019",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/kirti-3/",
+      twitter: "",
+      github: "https://github.com/kirti-3",
+      category: "Alumni"
+     },
+     {
+      imageUrl:"/img/",
+      name: "Dr. Arindam Ghosh",
+      designation: "",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Faculty Advisor"
+     },
+     {
+      imageUrl:"/img/",
+      name: "Dr. Ruma Ghosh",
+      designation: "",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: "",
+      category: "Faculty Advisor"
      },
   // {
   //   imageUrl: "",
