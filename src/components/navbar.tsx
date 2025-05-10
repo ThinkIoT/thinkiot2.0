@@ -2,9 +2,8 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
 
-import {NAV_ITEMS } from "@/constants";
+import { NAV_ITEMS } from "@/constants";
 import { cn } from "@/lib/utils";
-
 
 export const Navbar = () => {
   const navContainerRef = useRef<HTMLDivElement>(null);
@@ -61,13 +60,16 @@ export const Navbar = () => {
             <a href="#hero" className="transition hover:opacity-75">
               <img src="/icon.png" alt="Logo" className="w-20" />
             </a>
-
           </div>
 
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {NAV_ITEMS.map(({ label, href }) => (
-                <a key={href} href={href} className="nav-hover-btn">
+                <a
+                  key={href}
+                  href={href}  // Ensure this href corresponds to the section IDs like '#about'
+                  className="nav-hover-btn"
+                >
                   {label}
                 </a>
               ))}
