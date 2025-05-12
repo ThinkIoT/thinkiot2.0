@@ -8,17 +8,17 @@ export default [
       platform: "Albert Einstein Hall, 3rd Floor",
       time: "10:30am - Onwards",
       button: "Check It out",
-      href: "",
+      href: "/events/first",
     },
     {
       imageUrl: "/public/img/1.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
       title: "BOOTING IOT V1.0: AN INTRODUCTION TO THE IOT PLATFORM",
-      date: "28-29", suscript: "th", year: "April 2017",
+      date: "28", suscript: "th", year: "April 2017",
       platform: "Albert Einstein Hall, 3rd Floor",
       time: "10:30am - Onwards",
       button: "Check It out",
-      href: "",
+      href: "/events/second",
     },
     {
       imageUrl: "/public/img/2.jpg",
@@ -28,7 +28,7 @@ export default [
       platform: "Albert Einstein Hall, 3rd Floor",
       time: "10:30am - Onwards",
       button: "Check It out",
-      href: "",
+      href: "/events/third",
     },
     {
       imageUrl: "/public/img/3.jpg",
@@ -38,6 +38,6 @@ export default [
       platform: "Albert Einstein Hall, 3rd Floor",
       time: "10:30am - Onwards",
       button: "Check It out",
-      href: "",
+      href: "/events/fourth",
     },
   ];
