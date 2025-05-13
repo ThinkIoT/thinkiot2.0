@@ -1,6 +1,6 @@
 # Think IoT - IoT & Embedded Systems Club Website
 
-![Cyber Sleuths](./home.png) 
+![Think IoT](./home.png) 
 
 Welcome to the **Think IoT** GitHub repository! This is the official website for the Internet of Things and Embedded Systems club of **Dr. B. C. Roy Engineering College**, located within the CSE department.  We are a team of innovators passionate about building smart solutions using IoT, sensors, embedded systems, and real-time data analytics.
 ## 🌐 Live Demo
