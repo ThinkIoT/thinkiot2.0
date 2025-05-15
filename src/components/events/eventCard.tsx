@@ -74,7 +74,7 @@ export default function EventCard({ events }: { events: Event }) {
         </div>
         <div>
           <div className="px-3 py-3 subpixel-antialiased ">
-            <h1 className="text-black-500 pb-2 font-serif text-xl font-bold">
+            <h1 className="text-blue-900 pb-2 font-serif text-xl font-bold">
               {events.title}
             </h1>
             <table className="mt-2 font-serif text-sm text-gray-600">
