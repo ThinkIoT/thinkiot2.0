@@ -1,7 +1,7 @@
 export default [
     // ENCRYPTA
     {
-      imageUrl: "/public/img/0.jpg",
+      imageUrl: "/img/0.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
       title: "Workshop1",
       date: "12", suscript: "th", year: "April 2024",
@@ -11,7 +11,7 @@ export default [
       href: "/events/first",
     },
     {
-      imageUrl: "/public/img/1.jpg",
+      imageUrl: "/img/1.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
       title: "BOOTING IOT V1.0: AN INTRODUCTION TO THE IOT PLATFORM",
       date: "28", suscript: "th", year: "April 2017",
@@ -21,7 +21,7 @@ export default [
       href: "/events/second",
     },
     {
-      imageUrl: "/public/img/2.jpg",
+      imageUrl: "/img/2.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
       title: "Think-IoT workshop v1.2",
       date: "3", suscript: "rd", year: "March 2017",
@@ -31,7 +31,7 @@ export default [
       href: "/events/third",
     },
     {
-      imageUrl: "/public/img/3.jpg",
+      imageUrl: "/img/3.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
       title: "Think-IoT Arduino workshop",
       date: "15", suscript: "th", year: "December 2016",
