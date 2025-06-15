@@ -64,6 +64,16 @@ export default [
     github: "https://github.com/Anubhab081201",
     category: "4th Year"
   },
+  {
+    imageUrl: "/img/Aditi C.jpg",
+    name: "Aditi Chatterjee",
+    designation: "Lead Event Manager",
+    instagram: "https://www.instagram.com/adiittiiiiiiiiiiii?igsh=MXY0dXNvOXhhNmFjNA==",
+    linkedin: "http://linkedin.com/in/aditi-ch9",
+    twitter: "",
+    github: "http://github.com/Aditi0257e",
+    category: "4th Year"
+  },
 
   //3rd Year
   {
