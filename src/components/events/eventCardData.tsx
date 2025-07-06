@@ -1,9 +1,10 @@
 export default [
     // ENCRYPTA
+    
     {
       imageUrl: "/img/0.jpg",
       imageAlt: "Seminar and Hands-on workshop on IOT",
-      title: "Workshop1",
+      title: "Workshop2",
       date: "12", suscript: "th", year: "April 2024",
       platform: "Albert Einstein Hall, 3rd Floor",
       time: "10:30am - Onwards",

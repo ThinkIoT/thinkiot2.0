@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const images = [
   "/img/S4.1.jpg",
@@ -9,19 +9,24 @@ const images = [
 ];
 
 const Event1: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const scrollToIndex = (index: number) => {
-    if (scrollRef.current) {
-      const scrollWidth = scrollRef.current.scrollWidth / images.length;
-      scrollRef.current.scrollTo({
-        left: index * scrollWidth,
-        behavior: "smooth",
-      });
+    if (index >= 0 && index < images.length) {
       setActiveIndex(index);
     }
   };
+
+  const handlePrev = () => scrollToIndex(activeIndex - 1);
+  const handleNext = () => scrollToIndex((activeIndex + 1) % images.length);
+
+  // 🔄 Auto-scroll effect every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div
@@ -29,79 +34,117 @@ const Event1: React.FC = () => {
         margin: 0,
         padding: 0,
         fontFamily: "Arial, sans-serif",
-        background: "linear-gradient(to bottom right, #0d1b2a, #1b263b)",
         color: "white",
-        minHeight: "100vh",
-        textAlign: "center",
-        paddingInline: "20px",
-        paddingTop: "60px",
-        boxSizing: "border-box",
+        height: "100vh",
+        width: "100vw",
+        position: "relative",
+        overflow: "hidden",
+        backgroundColor: "#0d1b2a",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-        <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>
+      {/* Background Image (Watermarked) */}
+      <img
+        src={images[activeIndex]}
+        alt={`Slide ${activeIndex + 1}`}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          opacity: 0.2,
+          zIndex: 0,
+          transition: "opacity 1s ease-in-out",
+        }}
+      />
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={handlePrev}
+        style={{
+          position: "absolute",
+          left: "20px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.4)",
+          border: "none",
+          borderRadius: "50%",
+          color: "white",
+          fontSize: "28px",
+          width: "50px",
+          height: "50px",
+          cursor: "pointer",
+          zIndex: 2,
+        }}
+      >
+        ‹
+      </button>
+      <button
+        onClick={handleNext}
+        style={{
+          position: "absolute",
+          right: "20px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.4)",
+          border: "none",
+          borderRadius: "50%",
+          color: "white",
+          fontSize: "28px",
+          width: "50px",
+          height: "50px",
+          cursor: "pointer",
+          zIndex: 2,
+        }}
+      >
+        ›
+      </button>
+
+      {/* Description Box */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          maxWidth: "1000px",
+          padding: "40px",
+          background: "rgba(13, 27, 42, 0.7)",
+          borderRadius: "20px",
+          boxShadow: "0 0 20px rgba(0,0,0,0.6)",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "2.2rem", marginBottom: "20px" }}>
           Seminar on the IoT Platform: Empowering the Future of Technology
         </h1>
-        <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
-          This seminar, organized by <i>ThinkIoT Lab</i>, is a premier event designed to introduce attendees to the Internet of Things (IoT) platform, explore its vast potential, and equip students and professionals with the knowledge needed to build, innovate, and deploy IoT solutions. The seminar begins with a foundational understanding of IoT technologies, including sensors, communication protocols, and cloud integration. Following the theoretical sessions, attendees will engage in practical hands-on demonstrations, where they will interact with real-world IoT devices and gain insights into how IoT systems are applied across industries. Held at <b>1st floor, PG & Research Building, BCREC, Durgapur</b>, the event provides a unique opportunity for networking and knowledge exchange with experts in the field, ensuring that participants leave with a deeper understanding of IoT and its transformative potential.
-        </p>
-      </div>
-
-      {/* Event Highlight Heading */}
-      <h2 style={{ fontSize: "1.8rem", color: "#fff", margin: "40px 0 20px" }}>
-        Event Highlights
-      </h2>
-
-      {/* Image Slider Section */}
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 10px" }}>
-        <div
-          ref={scrollRef}
+        <ul
           style={{
-            display: "flex",
-            overflow: "hidden",
-            scrollBehavior: "smooth",
-            gap: "20px",
+            textAlign: "justify",
+            fontSize: "1.3rem",
+            lineHeight: "2.1",
+            paddingInline: "20px",
+            listStyleType: "disc",
           }}
         >
-          {images.map((src, index) => (
-            <div
-              key={index}
-              style={{
-                minWidth: "100%",
-                maxHeight: "300px",
-                borderRadius: "12px",
-                overflow: "hidden",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
-                flexShrink: 0,
-              }}
-            >
-              <img
-                src={src}
-                alt={`IoT slide ${index + 1}`}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Dot Navigation */}
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "20px", gap: "10px" }}>
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollToIndex(index)}
-              style={{
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                backgroundColor: activeIndex === index ? "white" : "rgba(255,255,255,0.4)",
-                border: "none",
-                cursor: "pointer",
-                transition: "background-color 0.3s",
-              }}
-            />
-          ))}
-        </div>
+          <li>
+            Organized by <i>ThinkIoT Lab</i> to introduce IoT platform and innovation.
+          </li>
+          <li>
+            Covers fundamental IoT technologies: sensors, communication protocols, cloud.
+          </li>
+          <li>
+            Hands-on session with real-world IoT devices and demonstrations.
+          </li>
+          <li>
+            Held at <b>1st floor, PG & Research Building, BCREC, Durgapur</b>.
+          </li>
+          <li>
+            Great opportunity for networking, interaction with IoT experts.
+          </li>
+        </ul>
       </div>
     </div>
   );

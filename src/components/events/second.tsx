@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const images = [
   "/img/S2.1.jpg",
@@ -23,85 +23,164 @@ const ZeroEvent: React.FC = () => {
     }
   };
 
+  const handlePrev = () => {
+    const newIndex = activeIndex > 0 ? activeIndex - 1 : 0;
+    scrollToIndex(newIndex);
+  };
+
+  const handleNext = () => {
+    const newIndex =
+      activeIndex < images.length - 1 ? activeIndex + 1 : images.length - 1;
+    scrollToIndex(newIndex);
+  };
+
+  useEffect(() => {
+    // Automatically scroll every 3 seconds
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => {
+        const nextIndex = (prev + 1) % images.length;
+        scrollToIndex(nextIndex);
+        return nextIndex;
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       style={{
-        margin: 0,
-        padding: 0,
+        position: "relative",
+        height: "100vh",
+        width: "100vw",
         fontFamily: "Arial, sans-serif",
+        overflow: "hidden",
         background: "linear-gradient(to bottom right, #0d1b2a, #1b263b)",
         color: "white",
-        minHeight: "100vh",
-        textAlign: "center",
-        paddingInline: "20px",
-        paddingTop: "60px",
-        boxSizing: "border-box",
       }}
     >
-      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-        <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>
-          Hands-On IoT Learning with Strong Fundamentals
-        </h1>
-        <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
-          This foundational session, organized by <i>ThinkIoT Lab</i>, is designed to give students a complete understanding of the Internet of Things (IoT) by first establishing a solid background in the subject. From the fundamental principles to the architecture and real-world relevance of IoT systems, participants will be guided step-by-step through the concepts that define this technology. Once the theoretical base is established, the seminar transitions into a hands-on approach, allowing students to experience IoT devices, sensors, and communication protocols directly. This blend of deep knowledge and practical exposure equips learners with the skills and confidence needed to develop innovative IoT projects and pursue advanced IoT applications in academic and industrial domains.
-        </p>
-      </div>
-
-      {/* Event Highlight Heading */}
-      <h2 style={{ fontSize: "1.8rem", color: "#fff", margin: "40px 0 20px" }}>
-        Event Highlights
-      </h2>
-
-      {/* Image Slider Section */}
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 10px" }}>
-        <div
-          ref={scrollRef}
-          style={{
-            display: "flex",
-            overflow: "hidden",
-            scrollBehavior: "smooth",
-            gap: "20px",
-          }}
-        >
-          {images.map((src, index) => (
-            <div
-              key={index}
+      {/* Background Carousel */}
+      <div
+        ref={scrollRef}
+        style={{
+          display: "flex",
+          height: "100%",
+          overflow: "hidden",
+          scrollBehavior: "smooth",
+        }}
+      >
+        {images.map((src, index) => (
+          <div
+            key={index}
+            style={{
+              minWidth: "100%",
+              height: "100%",
+              overflow: "hidden",
+              flexShrink: 0,
+            }}
+          >
+            <img
+              src={src}
+              alt={`Slide ${index + 1}`}
               style={{
-                minWidth: "100%",
-                maxHeight: "300px",
-                borderRadius: "12px",
-                overflow: "hidden",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
-                flexShrink: 0,
-              }}
-            >
-              <img
-                src={src}
-                alt={`IoT slide ${index + 1}`}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Dot Navigation */}
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "20px", gap: "10px" }}>
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollToIndex(index)}
-              style={{
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                backgroundColor: activeIndex === index ? "white" : "rgba(255,255,255,0.4)",
-                border: "none",
-                cursor: "pointer",
-                transition: "background-color 0.3s",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                opacity: 0.2,
               }}
             />
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Arrows */}
+      <button
+        onClick={handlePrev}
+        style={{
+          position: "absolute",
+          left: "20px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          width: "40px",
+          height: "40px",
+          fontSize: "24px",
+          cursor: "pointer",
+          zIndex: 2,
+        }}
+      >
+        ‹
+      </button>
+      <button
+        onClick={handleNext}
+        style={{
+          position: "absolute",
+          right: "20px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          width: "40px",
+          height: "40px",
+          fontSize: "24px",
+          cursor: "pointer",
+          zIndex: 2,
+        }}
+      >
+        ›
+      </button>
+
+      {/* Centered Event Details */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "900px",
+          padding: "40px",
+          background: "rgba(0,0,0,0.6)",
+          borderRadius: "20px",
+          boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+          zIndex: 2,
+          textAlign: "center",
+        }}
+      >
+        <h1
+          style={{ fontSize: "2.4rem", marginBottom: "25px", fontWeight: "bold" }}
+        >
+          Hands-On IoT Learning with Strong Fundamentals
+        </h1>
+        <ul
+          style={{
+            fontSize: "1.2rem",
+            lineHeight: "2",
+            listStyle: "disc",
+            textAlign: "left",
+            paddingLeft: "30px",
+          }}
+        >
+          <li>
+            Organized by <i>ThinkIoT Lab</i> for comprehensive IoT learning.
+          </li>
+          <li>
+            Covers core concepts, system architecture, and real-world IoT applications.
+          </li>
+          <li>
+            Includes hands-on experience with IoT devices and communication protocols.
+          </li>
+          <li>
+            Focused on bridging theory with practical implementation.
+          </li>
+          <li>
+            Ideal for students aiming to build IoT projects or enter industrial domains.
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Layout from "../src/layout/layout";  // Import Layout from the new layout
 import Home from "./components/home/home";
 import Event from "./components/events/events";
 import Teams from "./components/members/teams";
+import SeminarPageZero from "./components/events/zero";
 import SeminarPage1 from "./components/events/first";
 import SeminarPage2 from "./components/events/second";
 import SeminarPage3 from "./components/events/third";
@@ -17,6 +18,7 @@ const App = () => {
         <Route element={<Layout />}>  
           <Route path="/" element={<Home />} />  {/* Home route */}
           <Route path="/events" element={<Event />} />  {/* Events route */}
+          <Route path="/events/zero" element={<SeminarPageZero />} />
           <Route path="/events/first" element={<SeminarPage1 />} /> {/* Seminar Page1 */}
           <Route path="/events/second" element={<SeminarPage2 />} /> {/* Seminar Page2 */}
           <Route path="/events/third" element={<SeminarPage3 />} /> {/* Seminar Page3 */}

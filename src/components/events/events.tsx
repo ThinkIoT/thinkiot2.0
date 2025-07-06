@@ -17,7 +17,7 @@ export default function Event() {
           <article className="col-auto mb-10">
             <div data-aos="fade-up" data-aos-duration="1000" className="mb-20">
               <h1 className="title-font mb-20 mt-36 text-center text-2xl font-medium text-gray-100 sm:text-3xl">  
-                Upcoming Event & Workshops
+                Recent Event & Workshop
               </h1>
 
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
@@ -46,10 +46,9 @@ export default function Event() {
                   </div>
                   <div>
                     <a
-                      href="https://forms.gle/6BAGAYZdGcKhNH8F9"
-                      className="focus:outline-none mt-10 rounded-full bg-red-600 p-2 px-4 text-center font-semibold shadow-lg transition-all duration-300 hover:bg-red-700 hover:shadow-none focus:ring"
-                    >
-                      Register Here
+                      href="/events/zero"
+                      className="focus:outline-none mt-10 rounded-full bg-red-600 p-2 px-4 text-center font-semibold shadow-lg transition-all duration-300 hover:bg-red-700 hover:shadow-none focus:ring">
+                      Check it Out
                     </a>
                   </div>
                 </div>
