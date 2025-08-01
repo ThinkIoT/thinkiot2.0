@@ -203,7 +203,7 @@ export default [
     imageUrl:"/img/Suvayu.jpg",
     name: "Subhayu Panja",
     designation: "Member",
-    instagram: "https://www.instagram.com/_blackspencer_?igsh=MXZndnUwejc0c3FqeQ==",
+    instagram: "https://www.instagram.com/__black__spencer__?igsh=MXZndnUwejc0c3FqeQ==",
     linkedin: "https://www.linkedin.com/in/subhayu-panja-a16a552a9utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "",
     github: "",
